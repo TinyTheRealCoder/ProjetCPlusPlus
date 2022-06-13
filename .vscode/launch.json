@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach",
+      "pipeTransport": {
+        "pipeCwd": "${workspaceFolder}",
+        "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+        "pipeArgs": [],
+        "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+      }
+    },
+    {
+      "name": ".NET Core Attach",
+      "type": "coreclr",
+      "request": "attach"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "c:/Users/jade/Documents/CoursDUTAS/S2/Algorithme avancée C++/ProjetCPlusPlus",
+      "program": "c:/Users/jade/Documents/CoursDUTAS/S2/Algorithme avancée C++/ProjetCPlusPlus/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
